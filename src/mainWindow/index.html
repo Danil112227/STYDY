@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>itProger App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="formInfo">
+            <form id="form"  class="userInfo">
+                <h1 class="title">Заполните форму для получения субсидии</h1>
+                <input type="text" placeholder="Фамилия" id="surname" required>
+                <input type="text" placeholder="Имя" id="name" required>
+                <input type="text" placeholder="Отчество" id="lastname" required>
+                <input type="text" placeholder="Адрес" id="homeAdress" required>
+                <p class="payment">Есть ли задолжность по оплате
+                    <select name="debt" id="select" class="debt" required>
+                        <option selected="selected" disabled
+                        >выберите ответ</option>
+                        <option value="yes">да</option>
+                        <option value="no">нет</option>
+                    </select></p>
+                <div class="radioBlock">
+                    <p class="caption">Получали ли вы субсидию ранее</p>
+                    <p class="radio"><input type="radio" name="radio" value="yes">да</p>
+                    <p class="radio"><input type="radio" name="radio" value="no">нет</p>
+                </div>
+                <button>Отправить</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
