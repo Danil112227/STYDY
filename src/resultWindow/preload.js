@@ -30,7 +30,7 @@ ipcRenderer.on("fetchingDataFromMain", function (event, store) {
   let moneyElement = document.querySelector("#money");
   console.log(store.strUser)
   if (store.strUser == 'yes')  {
-    moneyElement.innerText = 'в субсидии отказано (есть задолжность по оплате)'
+    moneyElement.innerText = 'в субсидии отказано'
   } else {
     moneyElement.innerText = 'cубсидия одобрена'
   }
